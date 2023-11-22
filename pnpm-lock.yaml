@@ -25,6 +25,9 @@ dependencies:
   '@angular/router':
     specifier: ^16.0.0
     version: 16.0.0(@angular/common@16.0.0)(@angular/core@16.0.0)(@angular/platform-browser@16.0.0)(rxjs@7.8.0)
+  ngx-extended-pdf-viewer:
+    specifier: 18.1.8
+    version: 18.1.8(@angular/common@16.0.0)(@angular/core@16.0.0)
   rxjs:
     specifier: ~7.8.0
     version: 7.8.0
@@ -4722,7 +4725,7 @@ packages:
     dependencies:
       copy-anything: 2.0.6
       parse-node-version: 1.0.1
-      tslib: 2.3.0
+      tslib: 2.5.0
     optionalDependencies:
       errno: 0.1.8
       graceful-fs: 4.2.11
@@ -4782,6 +4785,10 @@ packages:
   /lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
     dev: true
+
+  /lodash.deburr@4.1.0:
+    resolution: {integrity: sha512-m/M1U1f3ddMCs6Hq2tAsYThTBDaAKFDX3dwDo97GEYzamXi9SqUpjWi/Rrj/gf3X2n8ktwgZrlP1z6E3v/IExQ==}
+    dev: false
 
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
@@ -5171,6 +5178,18 @@ packages:
   /neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
+
+  /ngx-extended-pdf-viewer@18.1.8(@angular/common@16.0.0)(@angular/core@16.0.0):
+    resolution: {integrity: sha512-Z0jBuLCHVJ9tSlAtGyy89Uk3JOosoI0zoWxjfrgR1O6UKw4AZW5wvNZ4+T9m+cDYy/kDXVqPhyuWWuInrY/Wzg==}
+    peerDependencies:
+      '@angular/common': '>=12.0.0 <18.0.0'
+      '@angular/core': '>=12.0.0 <18.0.0'
+    dependencies:
+      '@angular/common': 16.0.0(@angular/core@16.0.0)(rxjs@7.8.0)
+      '@angular/core': 16.0.0(rxjs@7.8.0)(zone.js@0.13.0)
+      lodash.deburr: 4.1.0
+      tslib: 2.5.0
+    dev: false
 
   /nice-napi@1.0.2:
     resolution: {integrity: sha512-px/KnJAJZf5RuBGcfD+Sp2pAKq0ytz8j+1NehvgIGFkvtvFrDM3T8E4x/JJODXK9WZow8RRGrbA9QQ3hs+pDhA==}
@@ -5992,7 +6011,7 @@ packages:
   /rxjs@7.8.1:
     resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
     dependencies:
-      tslib: 2.3.0
+      tslib: 2.5.0
     dev: true
 
   /safe-buffer@5.1.2:
@@ -6655,7 +6674,6 @@ packages:
 
   /tslib@2.5.0:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
-    dev: true
 
   /tuf-js@1.1.7:
     resolution: {integrity: sha512-i3P9Kgw3ytjELUfpuKVDNBJvk4u5bXL6gskv572mcevPbSKCV3zt3djhmlEQ65yERjIbOSncy7U4cQJaB1CBCg==}
